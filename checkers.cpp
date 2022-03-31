@@ -250,7 +250,7 @@ int AIPlayer::AnalyzeCell(std::pair<int, int> from, Desk *desk) {
         for (auto cell: available_steps_[1]) {
             MakeStepWithKill(current, cell.GetCoords(), &tmp_desk);
             Cell new_cell = tmp_desk.GetCell(cell.GetCoords().first, cell.GetCoords().second);
-            new_cell.SetEstimation(new_cell.GetEstimation() + 1);
+            new_cell.SetEstimation(new_cell.GetEstimation() + 2);
             if (new_cell.GetEstimation() < min_estimation) {
                 min_estimation = new_cell.GetEstimation();
             }
