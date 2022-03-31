@@ -235,6 +235,8 @@ void Game::Start() {
     }
 }
 
+void Game::MakeAiStep(std::pair<int, int> from, std::pair<int, int> to) {}
+
 
 int AIPlayer::AnalyzeCell(std::pair<int, int> from, Desk *desk) {
     std::queue<std::pair<int, int>> queue;
