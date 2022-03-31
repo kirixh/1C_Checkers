@@ -267,7 +267,6 @@ int AIPlayer::AnalyzeCell(std::pair<int, int> from, Desk *desk) {
     return min_estimation;
 }
 
-
 int AIPlayer::Minimax(std::pair<int, int> from, int recursion_lvl, Desk *desk, int player) {
     Desk tmp_desk = desk;
     if (recursion_lvl == 0) {
